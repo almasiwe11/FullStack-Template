@@ -21,5 +21,8 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
-  rules: { "no-unused-vars": "off" },
+  rules: {
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+  },
 }
